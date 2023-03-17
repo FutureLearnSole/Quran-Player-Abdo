@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+main {
+  background-color: #2a5ae8;
+}
+
+main .info {
+  background-color: #ebb417;
+  text-align: center;
+  padding: 1rem;
+}
+
+main .info a {
+  position: relative;
+  text-decoration: none;
+  color: #2a5ae8;
+  font-weight: bold;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+main .info a:hover {
+  color: #e82d2a;
+}
+
+main .info a:hover::after {
+  content: "Go To My LinkedIn";
+  position: absolute;
+  left: 0;
+  top: 1.6rem;
+  background-color: white;
+  width: 150px;
+  padding: 10px 20px;
+  color: #e82d2a;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4rem 7rem;
+  background-size: cover;
+}
+
+header h1 {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+}
+
+main .mishary-alafasy {
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  font-size: 1.3rem;
+}
+
+main .searchBar {
+  position: relative;
+  width: 40%;
+  border-radius: 25px;
+  height: 50px;
+  font-size: 25px;
+  padding: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-top: 2rem;
+}
+
+main .searchBar input {
+  background-color: transparent;
+  position: absolute;
+  right: 10px;
+  border: 0;
+  outline: 0;
+  font-size: 23px;
+  /* background-color: black; */
+  width: 80%;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border-radius: 25px;
+  padding: 10px;
+  font-family: "Cairo", sans-serif;
+}
+
+main .searchBar img {
+  position: absolute;
+  left: 20px;
+  height: 42px;
+  width: 42px;
+  top: 50%;
+  padding: 5px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+main .searchBar img:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+
+main section.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 4rem;
+  margin-top: 3rem;
+}
+
+section.content section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin: 15px;
+  border-radius: 1rem;
+  width: 30rem;
+  height: fit-content;
+  justify-content: space-around;
+  background-color: #e82d2a;
+  border-bottom: 4px solid #9e0401;
+  align-items: center;
+}
+
+section.content section h3 {
+  color: #f5f5f5;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+section.content section audio {
+  width: 100%;
+  height: 40px;
+  color: #333;
+  border-radius: 5px;
+  padding: 0px;
+  outline: none;
+  border: none;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #0c609c;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #2a99e8;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: white;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+audio::-webkit-media-controls-timeline {
+  border-radius: 40px;
+  background-color: #2a99e8;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #2a99e8;
+  border-radius: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+audio::-webkit-media-controls-mute-button {
+  background-color: #2a99e8;
+  border-radius: 50%;
+}
+@media (max-width: 1165px) {
+  main section.content {
+    padding: 3rem;
+    padding-top: 4rem;
+  }
+
+  section.content section {
+    width: 30rem;
+  }
+}
+@media (max-width: 1132px) {
+  main section.content {
+    padding: 2rem;
+    padding-top: 3rem;
+  }
+
+  section.content section {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  main .searchBar {
+    width: 50px;
+  }
+
+  main .searchBar input {
+    display: none;
+  }
+
+  main .searchBar img {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+
+  main section.content {
+    /* padding: 1rem; */
+    padding-top: 7rem;
+  }
+
+  section.content section {
+    width: 100%;
+  }
+}
