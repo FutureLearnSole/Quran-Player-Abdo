@@ -1,4 +1,5 @@
 Demo: https://abdoali248.github.io/Quran-Player-Abdo/
+
 السلام عليكم، هذا مشغل للقرآن الكريم بصوت القارئ مشاري العفاسي تم تصميمه وإنشائه بواستطتي، 
 ## أستخدمت في هذا المشروع: 
 - Font "Cairo" By Google Fonts
