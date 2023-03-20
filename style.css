@@ -294,3 +294,16 @@ audio::-webkit-media-controls-mute-button {
     width: 100%;
   }
 }
+
+/* Sha'ban 27, 1444 *//*  الله أكبر */
+@media (width <=369px) {
+body { line-height: 1.4; }
+/* 	https://developer.mozilla.org/ja/docs/Web/CSS/@media */
+	
+main section.content { /* padding: 1rem; */
+	padding-top: 7rem; 
+	padding-left: revert;padding-right: revert;
+	padding-left: initial;padding-right: initial;}
+/* 	padding; */
+	
+}
